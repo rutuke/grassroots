@@ -7,19 +7,20 @@
             <p>View some tips and guides on maintaining your mind healthy and join some local community gatherings.</p>
             <br>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-4">
                     <a class="btn btn-primary btn-lg colbtn" href="/event/new">Add a New Gathering</a>
                 </div>
+                <div class="col-md-4">
+                    <a class="btn btn-primary btn-lg colbtn" href="http://4a580a2b.ngrok.io/#/welcome">Take Our Wellness Test</a>
                 </div>
             </div>
         </div>
     </header>
-    
-    <div class="row text-center" style="display:flex; flex-wrap: wrap">
+    <div class="row text-center container" style="display:flex; flex-wrap: wrap">
         <% event.forEach(function(event){%>
             <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
-                    <img src="<%= event.image %>">
+                    <img src="<%= event.image%>">
                     <div class="caption">
                         <h4><%= event.name %> </h4>
                     </div>

@@ -64,7 +64,7 @@ app.post("/event", function(req,res){
     var location = req.body.location;
     var date = req.body.date;
     var info = req.body.info;
-    var newEvent = {name: name, location: location, date: date, info: info}
+    var newEvent = {name: name, image: image, location: location, date: date, info: info}
     // Create new campground and save to DB
     Event.create(newEvent, function(err, newEvent){
         if(err){
