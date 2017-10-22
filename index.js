@@ -5,7 +5,9 @@ var     express     = require("express"),
         User        = require("./models/user.js"),
         Event       = require("./models/event.js");
 
-mongoose.connect("mongodb://localhost/wellbeing");
+// mongoose.connect("mongodb://localhost/wellbeing");
+mongoose.connect("mongodb://ruta:ruta1996@ds227865.mlab.com:27865/grassroots");
+// mongodb://ruta:yodacansee1@ds227865.mlab.com:27865/grassroots
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
